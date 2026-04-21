@@ -6,7 +6,7 @@ There is also oscilloscope blanking (Z control), untested, following the 4037 de
 
 The board includes op-amps on DAC outputs for protecting the DACs. With the given R-C values there is a ca. 10 kHz cut-off for noise reduction.
 
-Note two problems with the PCB:
+Note three problems with the PCB:
 * Produced with 1.6 mm thickness is very difficult to insert into slot (but you can do it!)
 * The DAC output connectors are made for vertical minijacks. This is stupid because it requires at least 3 slots. You probably want to solder in something else there. The parallel-out screw connectors are also too tall for 1 slot. (I have plenty of space in my Nova 840)
 * Adding a 220 uF capacitor in parallel with C12 next to U13 (mind the polarity) greatly reduces noise from the DAC outputs.
