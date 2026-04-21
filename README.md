@@ -1,7 +1,7 @@
 # novadac
-6-ch, 12-bits DAC + 2-ch. 16-bits parallel out for Nova. Compatible with 4037.
+6-ch, 12-bits DAC + 2-ch. 16-bits parallel out for Nova. Compatible with 4037 as described in the "How to use the Nova computers" document.
 
-Device code 23. Use DOB to select channel (0-5 for DACs, 6-7 for parallel out). Use DOA for data.
+Device code 23 octal. Use DOB to select channel (0-5 for DACs, 6-7 for parallel out). Use DOA for data.
 There is also oscilloscope blanking (Z control), untested, following the 4037 description.
 
 The board includes op-amps on DAC outputs for protecting the DACs. With the given R-C values there is a ca. 10 kHz cut-off for noise reduction.
@@ -9,6 +9,7 @@ The board includes op-amps on DAC outputs for protecting the DACs. With the give
 Note two problems with the PCB:
 * Produced with 1.6 mm thickness is very difficult to insert into slot (but you can do it!)
 * The DAC output connectors are made for vertical minijacks. This is stupid because it requires at least 3 slots. You probably want to solder in something else there. The parallel-out screw connectors are also too tall for 1 slot. (I have plenty of space in my Nova 840)
+* Adding a 220 uF capacitor in parallel with C12 next to U13 (mind the polarity) greatly reduces noise from the DAC outputs.
 
 Have not made bill-of-materials. Components are in the schematic, the chips are:
 
